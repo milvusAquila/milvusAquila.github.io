@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en-US" style="height: 100%"><head>
+    <meta http-equivl="Content-type" charset="utf-8" content="text/html; charste=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <title>Vocab</title>
+  
+<link rel="preload" href="/vocab-641ef6e553158300_bg.wasm" crossorigin="anonymous" integrity="sha384-Hq3X+DhLdaVwJ4DNkDWTTIUn/0AYfQDLp/MnC7fGcZy0FZCsskx44FfkNqsAjIsE" as="fetch" type="application/wasm">
+<link rel="modulepreload" href="/vocab-641ef6e553158300.js" crossorigin="anonymous" integrity="sha384-O4Dyw7vjT1ZkS+u2VU67p+ixztKOryp3t0yo4lRzujodoPWRsCY37sZE75YKrEIk"></head>
+  <body style="height: 100%; margin: 0">
+    <script type="module">
+      import init from "./dist/vocab.js";
+      init('./dist/vocab_bg.wasm');
+    </script>
+  
+
+
+<script type="module">
+import init, * as bindings from '/vocab-641ef6e553158300.js';
+init('/vocab-641ef6e553158300_bg.wasm');
+window.wasmBindings = bindings;
+
+</script></body></html>
